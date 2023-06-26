@@ -1,0 +1,166 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+
+
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    
+    background-color: black;
+    background-image: url('../assets/images/book3Small.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+:root {
+    --main-wheat-color: wheat;
+    --main-dark-color: rgb(58, 24, 5);
+    --second-dark-color: rgb(110, 52, 18);
+    --white-color: white;
+    --gold-color: rgb(156, 136, 21);
+    --blue-color: blue;
+    --blue-dark: rgb(38, 38, 143);
+    --black-color: black;
+    --black-transparency: rgba(0, 0, 0, 0.301);
+    --green-transparency: rgba(9, 99, 105, 0.24);
+    --orange: orange;
+  }
+
+.header{
+    color: var(--white-color);
+    background-color: black;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    font-size: .8rem;
+    border-bottom: 1px solid rgb(197, 164, 126);
+}
+
+.header .btnContainer{
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+    /* flex-direction: column; */
+}
+
+.labelNumber{
+    color: greenyellow;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.inputNumber{
+    border-radius: 5px;
+    width: 10%;
+    background-color:rgb(240, 233, 212);
+    padding: 3px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btnWrite{
+    /* border: 1px solid greenyellow; */
+    margin-left: 10px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+}
+
+.btnWrite span{
+    font-size: 2.5rem;
+    
+}
+
+.btnWrite:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.results p{
+    margin: 20px;
+    font-size: 1.5rem;
+    color: rgb(248, 248, 248);
+    font-family: 'Grandiflora One', serif;
+    background-color: rgba(36, 66, 66, 0.5);
+    padding: 20px;
+}
+
+
+
+/* Media Querys ******************/
+
+
+@media only screen and (min-width: 600px){
+
+    .mainContent{
+          width: 70%;
+     }
+
+     .header .btnContainer{
+     
+        flex-direction: row;
+ 
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1024px)  {
+
+    .header{
+        flex-direction: row;
+    }
+
+    .header .btnContainer{
+        width: 40%;
+     
+    }
+
+}
